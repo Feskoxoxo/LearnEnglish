@@ -36,8 +36,9 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
         
         routesQueue = [routeAfterSplash]
         
-        super.init(rootViewController: BaseNavigationController(), initialRoute: .animatedSplashScreen)
-        
+//        super.init(rootViewController: BaseNavigationController(), initialRoute: .animatedSplashScreen)
+        super.init(rootViewController: BaseNavigationController(), initialRoute: .main)
+
         rootViewController.setNavigationBarHidden(true, animated: false)
         rootViewController.navigationBar.isTranslucent = false
     }
@@ -56,12 +57,13 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
             guard let vc = container.resolve(OnboardingViewController.self, argument: weakRouter) else {
                 return .none()
             }
+
             return .set([vc])
         case .main:
-            let coordinator = MainTabBarCoordinator()
-            
-            mainTabBarCoordinator = coordinator
-            
+            guard let coordinator = container.resolve(MainTabBarCoordinator.self) else {
+                return .none()
+            }
+
             return .set([coordinator])
         }
     }

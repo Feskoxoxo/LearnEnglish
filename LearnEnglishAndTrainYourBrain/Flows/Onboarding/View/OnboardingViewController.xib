@@ -11,7 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="LearnEnglishAndTrainYourBrain" customModuleProvider="target">
             <connections>
+                <outlet property="moreInformationButton" destination="4me-3R-fcj" id="PB4-8f-pIk"/>
                 <outlet property="nextButton" destination="xU7-dK-OQZ" id="ftQ-WS-yot"/>
+                <outlet property="textInfoLabel" destination="WT2-vy-wku" id="bbR-ML-5PX"/>
+                <outlet property="titleLabel" destination="zP9-bu-TIC" id="Fve-dz-ub3"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,16 +23,50 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU7-dK-OQZ">
-                    <rect key="frame" x="162" y="812" width="90" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xU7-dK-OQZ" customClass="MainStyleButton" customModule="LearnEnglishAndTrainYourBrain" customModuleProvider="target">
+                    <rect key="frame" x="20" y="796" width="374" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="2Ai-Ut-05K"/>
+                    </constraints>
                     <state key="normal" title="Продолжить"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Учи английский и тренируй мозг." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zP9-bu-TIC">
+                    <rect key="frame" x="20" y="64" width="374" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Данное приложение использует метод интервального повторения для тренировки запомнинания" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WT2-vy-wku">
+                    <rect key="frame" x="20" y="104.5" width="374" height="61"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4me-3R-fcj">
+                    <rect key="frame" x="20" y="730" width="374" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="BMu-Ek-kHQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="Узнать больше об интервальном повторении"/>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zP9-bu-TIC" secondAttribute="trailing" constant="20" id="Da3-N2-JyB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xU7-dK-OQZ" secondAttribute="bottom" constant="20" id="ErZ-6I-fJO"/>
+                <constraint firstItem="4me-3R-fcj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="H3X-OY-an9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xU7-dK-OQZ" secondAttribute="trailing" constant="20" id="Ir6-9L-fU5"/>
+                <constraint firstItem="WT2-vy-wku" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="J1E-BW-QBC"/>
+                <constraint firstItem="zP9-bu-TIC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Mzg-hB-Cmh"/>
+                <constraint firstItem="WT2-vy-wku" firstAttribute="top" secondItem="zP9-bu-TIC" secondAttribute="bottom" constant="20" id="QyW-lF-Dee"/>
+                <constraint firstItem="xU7-dK-OQZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="R75-0Z-6Xa"/>
                 <constraint firstItem="xU7-dK-OQZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="WSH-C3-55k"/>
+                <constraint firstItem="zP9-bu-TIC" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="gPb-az-QfI"/>
+                <constraint firstItem="xU7-dK-OQZ" firstAttribute="top" secondItem="4me-3R-fcj" secondAttribute="bottom" constant="20" id="jdU-CG-e13"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4me-3R-fcj" secondAttribute="trailing" constant="20" id="uGw-lL-8Lx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WT2-vy-wku" secondAttribute="trailing" constant="20" id="yqX-Ma-v08"/>
             </constraints>
             <point key="canvasLocation" x="132" y="88"/>
         </view>

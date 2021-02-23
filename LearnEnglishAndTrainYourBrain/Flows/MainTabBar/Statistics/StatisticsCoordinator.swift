@@ -8,8 +8,9 @@
 import XCoordinator
 import RxSwift
 import RxCocoa
+import Swinject
 
-enum AchivmentsRouter: Route {
+enum StatisticsRouter: Route {
     
     case main
     case back
@@ -17,9 +18,12 @@ enum AchivmentsRouter: Route {
     
 }
 
-class AchivmentsCoordinator: NavigationCoordinator<AchivmentsRouter> {
-    
-    init() {
+class StatisticsCoordinator: NavigationCoordinator<StatisticsRouter> {
+
+    private var container: Swinject.Container
+
+    init(container: Swinject.Container) {
+        self.container = container
         super.init(rootViewController: BaseNavigationController(), initialRoute: .main)
         
         rootViewController.navigationBar.isTranslucent = false
@@ -27,13 +31,10 @@ class AchivmentsCoordinator: NavigationCoordinator<AchivmentsRouter> {
     }
 
     // MARK: Overrides
-    override func prepareTransition(for route: AchivmentsRouter) -> NavigationTransition {
+    override func prepareTransition(for route: StatisticsRouter) -> NavigationTransition {
         switch route {
         case .main:
-            
-            let vc = AchivmentsMainViewController()
-            
-            return .set([vc])
+            return .none()
             
         case .back:
             return .pop()

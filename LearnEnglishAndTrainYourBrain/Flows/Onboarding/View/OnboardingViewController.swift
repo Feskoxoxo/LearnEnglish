@@ -9,8 +9,11 @@ import UIKit
 
 class OnboardingViewController: BaseViewController {
 
-    @IBOutlet weak var nextButton: UIButton!
-
+    @IBOutlet private weak var nextButton: MainStyleButton!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var textInfoLabel: UILabel!
+    @IBOutlet private weak var moreInformationButton: UIButton!
+    
     private let viewModel: OnboardingViewModel
     
     init(viewModel: OnboardingViewModel) {
@@ -20,16 +23,17 @@ class OnboardingViewController: BaseViewController {
         
         shouldHideNavigationBar = true
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        bind()
-    }
-    
+
     @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        configureStyle()
+        bind()
     }
     
     private func bind() {
@@ -39,4 +43,9 @@ class OnboardingViewController: BaseViewController {
         
         _ = viewModel.transform(input: input)
     }
+
+    private func configureStyle() {
+        titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+    }
+
 }
