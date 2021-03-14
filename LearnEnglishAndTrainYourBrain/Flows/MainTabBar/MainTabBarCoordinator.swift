@@ -42,9 +42,9 @@ class MainTabBarCoordinator: TabBarCoordinator<MainTabBarRoute> {
             tabs.append(tab.strongRouter)
         }
 
-        if let tab = container.resolve(StatisticsCoordinator.self) {
+        if let tab = container.resolve(DialogsListRouterCoordinator.self) {
             tab.rootViewController.tabBarItem = UITabBarItem(
-                title: "Статистика",
+                title: "Сообщения",
                 image: UIImage(named: "RepeatImage"),
                 selectedImage: UIImage(named: "RepeatImage")
             )

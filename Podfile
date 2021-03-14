@@ -28,6 +28,7 @@ target 'LearnEnglishAndTrainYourBrain' do
   pod 'XCoordinator'
   pod 'XCoordinator/RxSwift'
 
+  pod 'PromiseKit'
   pod 'Swinject'
 
   target 'LearnEnglishAndTrainYourBrainTests' do

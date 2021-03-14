@@ -6,9 +6,18 @@
 //
 
 import UIKit
+import RxDataSources
+import SwifterSwift
+import RxSwift
 
 class AddNewWordViewController: BaseViewController {
 
+    @IBOutlet private weak var mainTableView: UITableView!
+    @IBOutlet private weak var saveButton: MainStyleButton!
+
+    private var dataSource: RxTableViewSectionedAnimatedDataSource<TranslationsListSectionModel>?
+
+    private let disposeBag = DisposeBag()
     private let viewModel: AddNewWordViewModel
 
     init(viewModel: AddNewWordViewModel) {
@@ -25,19 +34,55 @@ class AddNewWordViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureTableView()
         configureStyle()
         bind()
+    }
+
+    private func configureTableView() {
+        mainTableView.register(nibWithCellClass: NewTranslationTableViewCell.self)
+
+        let dataSource = RxTableViewSectionedAnimatedDataSource<TranslationsListSectionModel>(
+            configureCell: { _, collectionView, indexPath, item in
+                switch item {
+                case let .translation(item: translation):
+                    let cell = collectionView.dequeueReusableCell(withClass: NewTranslationTableViewCell.self, for: indexPath)
+                    return cell
+                case .addNewExampleButton:
+                    let cell = collectionView.dequeueReusableCell(withClass: NewTranslationTableViewCell.self, for: indexPath)
+                    return cell
+                }
+            }
+        )
+
+        mainTableView.rx
+            .setDelegate(self)
+            .disposed(by: disposeBag)
+
+        self.dataSource = dataSource
     }
 
     private func bind() {
         let input = AddNewWordViewModel.Input(
         )
 
-        _ = viewModel.transform(input: input)
+        let output = viewModel.transform(input: input)
+
+        // MARK: Привязка данных к таблице
+
+        output.sectionModels
+            .drive(mainTableView.rx.items(dataSource: dataSource!))
+            .disposed(by: disposeBag)
     }
 
     private func configureStyle() {
-//        titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .medium)
+        saveButton.setTitle("Сохранить", for: .normal)
     }
+
+}
+
+
+// MARK: UITableViewDelegate
+extension AddNewWordViewController: UITableViewDelegate {
 
 }

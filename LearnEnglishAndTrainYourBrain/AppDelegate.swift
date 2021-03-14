@@ -27,11 +27,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         container.register(StatisticsCoordinator.self) { _ in
             StatisticsCoordinator(container: container)
         }
+        container.register(DialogsListRouterCoordinator.self) { _ in
+            DialogsListRouterCoordinator(container: container)
+        }
         container.register(WordsListCoordinator.self) { _ in
             WordsListCoordinator(container: container)
         }
         container.register(MainTabBarCoordinator.self) { _ in
             MainTabBarCoordinator(container: container)
+        }
+
+        // MARK: Services
+        container.register(DialogsServiceProtocol.self) { _ in
+            DialogServiceMock()
         }
 
         // MARK: AnimatedSplashScreen
@@ -86,6 +94,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         container.register(AddNewWordViewModel.self) { _, router in
             AddNewWordViewModel(router: router)
         }
+        container.register(AddNewWordViewController.self) { (resolver, router: WeakRouter<WordsListRouter>) in
+            AddNewWordViewController(viewModel: resolver.resolve(AddNewWordViewModel.self, argument: router)!)
+        }
+
+        // MARK: AddNewWord
+        container.register(DialogsListModule.self) { _ in
+            let controller = DialogsListViewController()
+            let presenter = DialogsListPresenter()
+            let interactor = DialogsListInteractor(dialogService: container.resolve(DialogsServiceProtocol.self)!)
+            let router = DialogsListRouter()
+
+            presenter.view = controller
+            controller.output = presenter
+            router.transitionHandler = controller
+            presenter.interactor = interactor
+            interactor.output = presenter
+            presenter.router = router
+            presenter.output = nil
+
+            return DialogsListModule(view: controller, input: presenter, output: nil)
+        }
+
         container.register(AddNewWordViewController.self) { (resolver, router: WeakRouter<WordsListRouter>) in
             AddNewWordViewController(viewModel: resolver.resolve(AddNewWordViewModel.self, argument: router)!)
         }

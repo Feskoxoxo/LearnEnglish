@@ -30,15 +30,35 @@
 		3A63C7D625E5390B003B9D44 /* AddNewWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A63C7D425E5390B003B9D44 /* AddNewWordViewController.xib */; };
 		3A63C7DF25E53D75003B9D44 /* NewTranslationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63C7DD25E53D75003B9D44 /* NewTranslationTableViewCell.swift */; };
 		3A63C7E025E53D75003B9D44 /* NewTranslationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A63C7DE25E53D75003B9D44 /* NewTranslationTableViewCell.xib */; };
+		3A66D43F25FE3617008325D1 /* DialogsListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D42D25FE3617008325D1 /* DialogsListAssembly.swift */; };
+		3A66D44025FE3617008325D1 /* DialogsListModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D42F25FE3617008325D1 /* DialogsListModuleInput.swift */; };
+		3A66D44125FE3617008325D1 /* DialogsListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43025FE3617008325D1 /* DialogsListPresenter.swift */; };
+		3A66D44225FE3617008325D1 /* DialogsListModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43125FE3617008325D1 /* DialogsListModuleOutput.swift */; };
+		3A66D44425FE3617008325D1 /* DialogsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43525FE3617008325D1 /* DialogsListViewController.swift */; };
+		3A66D44525FE3617008325D1 /* DialogsListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43625FE3617008325D1 /* DialogsListViewOutput.swift */; };
+		3A66D44625FE3617008325D1 /* DialogsListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43725FE3617008325D1 /* DialogsListViewInput.swift */; };
+		3A66D44725FE3617008325D1 /* DialogsListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43925FE3617008325D1 /* DialogsListInteractorOutput.swift */; };
+		3A66D44825FE3617008325D1 /* DialogsListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43A25FE3617008325D1 /* DialogsListInteractorInput.swift */; };
+		3A66D44925FE3617008325D1 /* DialogsListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43B25FE3617008325D1 /* DialogsListInteractor.swift */; };
+		3A66D44A25FE3617008325D1 /* DialogsListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43D25FE3617008325D1 /* DialogsListRouterInput.swift */; };
+		3A66D44B25FE3617008325D1 /* DialogsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D43E25FE3617008325D1 /* DialogsListRouter.swift */; };
+		3A66D45425FE36C6008325D1 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D45325FE36C6008325D1 /* BaseModel.swift */; };
+		3A66D45C25FE380C008325D1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D45B25FE380C008325D1 /* Router.swift */; };
+		3A66D46125FE3863008325D1 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D46025FE3863008325D1 /* View.swift */; };
+		3A66D48B25FE3CFE008325D1 /* DialogListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A66D48925FE3CFE008325D1 /* DialogListTableViewCell.swift */; };
+		3A66D48C25FE3CFE008325D1 /* DialogListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A66D48A25FE3CFE008325D1 /* DialogListTableViewCell.xib */; };
 		45CE7167125B0BB533BB35A9 /* Pods_LearnEnglishAndTrainYourBrain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED60D1B18D2CAA949361FDC3 /* Pods_LearnEnglishAndTrainYourBrain.framework */; };
 		58AAA009DA1D862DA34A721E /* RepeatMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAADF68C04884EA8383475 /* RepeatMainViewModel.swift */; };
 		58AAA03B86DBD59AA023FD61 /* Observable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA571B2AADCC841CCC28D /* Observable+Extensions.swift */; };
 		58AAA0AFABB02101F92C9CCF /* SettingsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAAE77D7C2313E786A3D95 /* SettingsMainViewController.swift */; };
 		58AAA1118877F3E17BC4A617 /* SettingsMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA73D8D1DCDB368B8609A /* SettingsMainViewModel.swift */; };
 		58AAA1179708AE62D989C95A /* StatisticsMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AAAB1E8FB453E3FF7A4B03 /* StatisticsMainViewController.xib */; };
+		58AAA1BB14DC666CC1DE1920 /* DialogServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA4789F648649C0ADBEBA /* DialogServiceMock.swift */; };
 		58AAA1D0C6F46E72E7091E70 /* RepeatMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA4B2DA574AD13E3D6E2A /* RepeatMainViewController.swift */; };
 		58AAA1F8F6458B9BB1DC0740 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAAF7E80C540E41F5DE910 /* MainTabBarController.swift */; };
 		58AAA234184E0B50F48B2D32 /* AnimatedSplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA21E1E8625506C650E07 /* AnimatedSplashScreenViewModel.swift */; };
+		58AAA2575E6427CB06C3E221 /* TranslationsListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAAB9F2E667D0A2D825C69 /* TranslationsListItem.swift */; };
+		58AAA2B5A4AF69C7CFA98075 /* WordTranslationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAAB2C36F7CC4EF0BC2D01 /* WordTranslationModel.swift */; };
 		58AAA2F5D7E7D6556589CCBB /* WordsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAAC27DCADAF04BEE8FAC5 /* WordsListCoordinator.swift */; };
 		58AAA310440794F99D221592 /* AnimatedSplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AAAE2A7F02AF63AEF75957 /* AnimatedSplashScreenViewController.xib */; };
 		58AAA41F1FED41F9A9C3487B /* RepeatMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AAADB3BED6BD2AC44033F1 /* RepeatMainViewController.xib */; };
@@ -49,12 +69,16 @@
 		58AAA78DC2D056949B3C69EE /* StatisticsMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA95DE42B6D2640610DDE /* StatisticsMainViewController.swift */; };
 		58AAA7CF212D4294D1E47645 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA23F6A5CE6556DFAE516 /* MainTabBarCoordinator.swift */; };
 		58AAA8218E4F001EC8B980CA /* StatisticsMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA344997D26739F6B18D3 /* StatisticsMainViewModel.swift */; };
+		58AAA88D6DBD335D7977C711 /* TranslationsListSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAAAAF5DCF961C17908020 /* TranslationsListSectionModel.swift */; };
+		58AAA8B9816A75CD1447B267 /* TranslationDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA25781448F8FC7856F7B /* TranslationDataModel.swift */; };
 		58AAA986D7CA6CEBE3E94E87 /* WordsListMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAAF7C1BFDAA344C2D9747 /* WordsListMainViewModel.swift */; };
 		58AAA9940B204578D9F38A49 /* RepeatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA664E11FDB5EEF81AF10 /* RepeatCoordinator.swift */; };
 		58AAA9A1A1015AE3338ED681 /* WordsListMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AAA042CF356845D0408208 /* WordsListMainViewController.xib */; };
 		58AAAA93C105FCED0906EACA /* WordsListMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA9F49ED8209C73AEB921 /* WordsListMainViewController.swift */; };
 		58AAAC06E4A0C1BD39B8430B /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA93BBD83C2397199DB8F /* SettingsCoordinator.swift */; };
 		58AAAD51A8D14B57703229E5 /* AddNewWordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA390612FB4567B34DDB8 /* AddNewWordViewModel.swift */; };
+		58AAAE23F0229C484EBCE2C6 /* DialogsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA416DBC8C66A9FE3C09F /* DialogsService.swift */; };
+		58AAAF8BEA7B5EA5D563F55D /* DialogsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA6EA633F36DDD499B2DB /* DialogsListCoordinator.swift */; };
 		58AAAFB3A51E24B96A84D1E4 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAA56C527EDD599AB1C082 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +129,23 @@
 		3A63C7D425E5390B003B9D44 /* AddNewWordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewWordViewController.xib; sourceTree = "<group>"; };
 		3A63C7DD25E53D75003B9D44 /* NewTranslationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTranslationTableViewCell.swift; sourceTree = "<group>"; };
 		3A63C7DE25E53D75003B9D44 /* NewTranslationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewTranslationTableViewCell.xib; sourceTree = "<group>"; };
+		3A66D42D25FE3617008325D1 /* DialogsListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListAssembly.swift; sourceTree = "<group>"; };
+		3A66D42F25FE3617008325D1 /* DialogsListModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListModuleInput.swift; sourceTree = "<group>"; };
+		3A66D43025FE3617008325D1 /* DialogsListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListPresenter.swift; sourceTree = "<group>"; };
+		3A66D43125FE3617008325D1 /* DialogsListModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListModuleOutput.swift; sourceTree = "<group>"; };
+		3A66D43525FE3617008325D1 /* DialogsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListViewController.swift; sourceTree = "<group>"; };
+		3A66D43625FE3617008325D1 /* DialogsListViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListViewOutput.swift; sourceTree = "<group>"; };
+		3A66D43725FE3617008325D1 /* DialogsListViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListViewInput.swift; sourceTree = "<group>"; };
+		3A66D43925FE3617008325D1 /* DialogsListInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListInteractorOutput.swift; sourceTree = "<group>"; };
+		3A66D43A25FE3617008325D1 /* DialogsListInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListInteractorInput.swift; sourceTree = "<group>"; };
+		3A66D43B25FE3617008325D1 /* DialogsListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListInteractor.swift; sourceTree = "<group>"; };
+		3A66D43D25FE3617008325D1 /* DialogsListRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListRouterInput.swift; sourceTree = "<group>"; };
+		3A66D43E25FE3617008325D1 /* DialogsListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListRouter.swift; sourceTree = "<group>"; };
+		3A66D45325FE36C6008325D1 /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		3A66D45B25FE380C008325D1 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		3A66D46025FE3863008325D1 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		3A66D48925FE3CFE008325D1 /* DialogListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogListTableViewCell.swift; sourceTree = "<group>"; };
+		3A66D48A25FE3CFE008325D1 /* DialogListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DialogListTableViewCell.xib; sourceTree = "<group>"; };
 		52407ACEAA796D61CD1D926F /* Pods_LearnEnglishAndTrainYourBrain_LearnEnglishAndTrainYourBrainUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnEnglishAndTrainYourBrain_LearnEnglishAndTrainYourBrainUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		567C301C4659315EB208E77D /* Pods_LearnEnglishAndTrainYourBrainTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnEnglishAndTrainYourBrainTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AAA005995F253B29DAC59D /* SettingsMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsMainViewController.xib; sourceTree = "<group>"; };
@@ -112,18 +153,25 @@
 		58AAA11F4DBDB4C6B1B6B51F /* AnimatedSplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSplashScreenViewController.swift; sourceTree = "<group>"; };
 		58AAA21E1E8625506C650E07 /* AnimatedSplashScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatedSplashScreenViewModel.swift; sourceTree = "<group>"; };
 		58AAA23F6A5CE6556DFAE516 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
+		58AAA25781448F8FC7856F7B /* TranslationDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationDataModel.swift; sourceTree = "<group>"; };
 		58AAA344997D26739F6B18D3 /* StatisticsMainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsMainViewModel.swift; sourceTree = "<group>"; };
 		58AAA390612FB4567B34DDB8 /* AddNewWordViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewWordViewModel.swift; sourceTree = "<group>"; };
+		58AAA416DBC8C66A9FE3C09F /* DialogsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsService.swift; sourceTree = "<group>"; };
 		58AAA4268027897355799AED /* MainStyleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainStyleButton.swift; sourceTree = "<group>"; };
+		58AAA4789F648649C0ADBEBA /* DialogServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogServiceMock.swift; sourceTree = "<group>"; };
 		58AAA4B2DA574AD13E3D6E2A /* RepeatMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatMainViewController.swift; sourceTree = "<group>"; };
 		58AAA56C527EDD599AB1C082 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		58AAA571B2AADCC841CCC28D /* Observable+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Extensions.swift"; sourceTree = "<group>"; };
 		58AAA664E11FDB5EEF81AF10 /* RepeatCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatCoordinator.swift; sourceTree = "<group>"; };
+		58AAA6EA633F36DDD499B2DB /* DialogsListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogsListCoordinator.swift; sourceTree = "<group>"; };
 		58AAA73D8D1DCDB368B8609A /* SettingsMainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMainViewModel.swift; sourceTree = "<group>"; };
 		58AAA93BBD83C2397199DB8F /* SettingsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		58AAA95DE42B6D2640610DDE /* StatisticsMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsMainViewController.swift; sourceTree = "<group>"; };
 		58AAA9F49ED8209C73AEB921 /* WordsListMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsListMainViewController.swift; sourceTree = "<group>"; };
+		58AAAAAF5DCF961C17908020 /* TranslationsListSectionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationsListSectionModel.swift; sourceTree = "<group>"; };
 		58AAAB1E8FB453E3FF7A4B03 /* StatisticsMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsMainViewController.xib; sourceTree = "<group>"; };
+		58AAAB2C36F7CC4EF0BC2D01 /* WordTranslationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTranslationModel.swift; sourceTree = "<group>"; };
+		58AAAB9F2E667D0A2D825C69 /* TranslationsListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationsListItem.swift; sourceTree = "<group>"; };
 		58AAAC27DCADAF04BEE8FAC5 /* WordsListCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsListCoordinator.swift; sourceTree = "<group>"; };
 		58AAAD53824DFB2BBDDE7CC2 /* StatisticsCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsCoordinator.swift; sourceTree = "<group>"; };
 		58AAADB3BED6BD2AC44033F1 /* RepeatMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepeatMainViewController.xib; sourceTree = "<group>"; };
@@ -202,6 +250,8 @@
 				3A52944125CEB1DF00872C4E /* LaunchScreen.storyboard */,
 				3A52935325CE9AE400872C4E /* Info.plist */,
 				58AAA09E46B2EE01BCE3D89F /* Main UIComponents */,
+				58AAAA402DA578CF59BDD93A /* Models */,
+				58AAA691A9483CDD073BBDDE /* Services */,
 			);
 			path = LearnEnglishAndTrainYourBrain;
 			sourceTree = "<group>";
@@ -238,6 +288,7 @@
 		3A5293C125CEA5A000872C4E /* Base Classes */ = {
 			isa = PBXGroup;
 			children = (
+				3A66D45225FE36AC008325D1 /* Base Viper Model */,
 				3A5293C225CEA5C500872C4E /* BaseNavigationController.swift */,
 				3A5293CF25CEA5DB00872C4E /* BaseViewModel.swift */,
 				3A5293CA25CEA5D000872C4E /* BaseViewController.swift */,
@@ -306,6 +357,86 @@
 				3A52941D25CEAD2500872C4E /* OnboardingViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3A66D42B25FE3617008325D1 /* DialogsList */ = {
+			isa = PBXGroup;
+			children = (
+				3A66D42C25FE3617008325D1 /* Assembly */,
+				3A66D42E25FE3617008325D1 /* Presenter */,
+				3A66D43225FE3617008325D1 /* View */,
+				3A66D43825FE3617008325D1 /* Interactor */,
+				3A66D43C25FE3617008325D1 /* Router */,
+				58AAA6EA633F36DDD499B2DB /* DialogsListCoordinator.swift */,
+			);
+			path = DialogsList;
+			sourceTree = "<group>";
+		};
+		3A66D42C25FE3617008325D1 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				3A66D42D25FE3617008325D1 /* DialogsListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		3A66D42E25FE3617008325D1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3A66D42F25FE3617008325D1 /* DialogsListModuleInput.swift */,
+				3A66D43025FE3617008325D1 /* DialogsListPresenter.swift */,
+				3A66D43125FE3617008325D1 /* DialogsListModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3A66D43225FE3617008325D1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A66D48825FE3CE5008325D1 /* Components */,
+				3A66D43525FE3617008325D1 /* DialogsListViewController.swift */,
+				3A66D43625FE3617008325D1 /* DialogsListViewOutput.swift */,
+				3A66D43725FE3617008325D1 /* DialogsListViewInput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A66D43825FE3617008325D1 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3A66D43925FE3617008325D1 /* DialogsListInteractorOutput.swift */,
+				3A66D43A25FE3617008325D1 /* DialogsListInteractorInput.swift */,
+				3A66D43B25FE3617008325D1 /* DialogsListInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3A66D43C25FE3617008325D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3A66D43D25FE3617008325D1 /* DialogsListRouterInput.swift */,
+				3A66D43E25FE3617008325D1 /* DialogsListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3A66D45225FE36AC008325D1 /* Base Viper Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A66D45325FE36C6008325D1 /* BaseModel.swift */,
+				3A66D45B25FE380C008325D1 /* Router.swift */,
+				3A66D46025FE3863008325D1 /* View.swift */,
+			);
+			path = "Base Viper Model";
+			sourceTree = "<group>";
+		};
+		3A66D48825FE3CE5008325D1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3A66D48925FE3CFE008325D1 /* DialogListTableViewCell.swift */,
+				3A66D48A25FE3CFE008325D1 /* DialogListTableViewCell.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		4703E5D426517B8835045302 /* Frameworks */ = {
@@ -378,6 +509,16 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		58AAA48D92C3B0905BE14C47 /* TranslationsListItemModel */ = {
+			isa = PBXGroup;
+			children = (
+				58AAAAAF5DCF961C17908020 /* TranslationsListSectionModel.swift */,
+				58AAAB9F2E667D0A2D825C69 /* TranslationsListItem.swift */,
+				58AAA25781448F8FC7856F7B /* TranslationDataModel.swift */,
+			);
+			path = TranslationsListItemModel;
+			sourceTree = "<group>";
+		};
 		58AAA5EA1096B0DB78010F6A /* Componets */ = {
 			isa = PBXGroup;
 			children = (
@@ -402,6 +543,15 @@
 				58AAA390612FB4567B34DDB8 /* AddNewWordViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		58AAA691A9483CDD073BBDDE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				58AAA416DBC8C66A9FE3C09F /* DialogsService.swift */,
+				58AAA4789F648649C0ADBEBA /* DialogServiceMock.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		58AAA739A4208F0BBDAB0D04 /* Main */ = {
@@ -435,6 +585,7 @@
 			children = (
 				58AAA91431F955F448EC5A51 /* View */,
 				58AAA674D2F908CB4541EED8 /* ViewModel */,
+				58AAA48D92C3B0905BE14C47 /* TranslationsListItemModel */,
 			);
 			path = AddNewWord;
 			sourceTree = "<group>";
@@ -467,6 +618,14 @@
 			path = WordsList;
 			sourceTree = "<group>";
 		};
+		58AAAA402DA578CF59BDD93A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				58AAAB2C36F7CC4EF0BC2D01 /* WordTranslationModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		58AAABC144339015BD17AF7D /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -489,6 +648,7 @@
 		58AAAD0340304C916F0D6152 /* MainTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				3A66D42B25FE3617008325D1 /* DialogsList */,
 				58AAA16719E9819B320E8278 /* Statistics */,
 				58AAAF7E80C540E41F5DE910 /* MainTabBarController.swift */,
 				58AAA23F6A5CE6556DFAE516 /* MainTabBarCoordinator.swift */,
@@ -659,6 +819,7 @@
 				3A63C7E025E53D75003B9D44 /* NewTranslationTableViewCell.xib in Resources */,
 				3A52944225CEB1DF00872C4E /* LaunchScreen.storyboard in Resources */,
 				3A52934D25CE9AE400872C4E /* Main.storyboard in Resources */,
+				3A66D48C25FE3CFE008325D1 /* DialogListTableViewCell.xib in Resources */,
 				3A5A06CB25D9816200F75677 /* WorkSmart.json in Resources */,
 				3A52941F25CEAD2500872C4E /* OnboardingViewController.xib in Resources */,
 				58AAA310440794F99D221592 /* AnimatedSplashScreenViewController.xib in Resources */,
@@ -797,17 +958,27 @@
 				3A5293CB25CEA5D000872C4E /* BaseViewController.swift in Sources */,
 				3A5293C325CEA5C500872C4E /* BaseNavigationController.swift in Sources */,
 				3A5293BA25CE9E8D00872C4E /* AppCoordinator.swift in Sources */,
+				3A66D44725FE3617008325D1 /* DialogsListInteractorOutput.swift in Sources */,
+				3A66D44B25FE3617008325D1 /* DialogsListRouter.swift in Sources */,
 				3A52934A25CE9AE400872C4E /* ViewController.swift in Sources */,
+				3A66D45425FE36C6008325D1 /* BaseModel.swift in Sources */,
+				3A66D44225FE3617008325D1 /* DialogsListModuleOutput.swift in Sources */,
 				3A52934625CE9AE400872C4E /* AppDelegate.swift in Sources */,
 				3A52941E25CEAD2500872C4E /* OnboardingViewController.swift in Sources */,
 				3A5293FC25CEA9C500872C4E /* NotificationName+Extensions.swift in Sources */,
+				3A66D48B25FE3CFE008325D1 /* DialogListTableViewCell.swift in Sources */,
 				3A52941425CEAB0200872C4E /* OnboardingViewModel.swift in Sources */,
 				3A5293D025CEA5DB00872C4E /* BaseViewModel.swift in Sources */,
 				3A63C7DF25E53D75003B9D44 /* NewTranslationTableViewCell.swift in Sources */,
 				58AAA234184E0B50F48B2D32 /* AnimatedSplashScreenViewModel.swift in Sources */,
+				3A66D43F25FE3617008325D1 /* DialogsListAssembly.swift in Sources */,
+				3A66D44825FE3617008325D1 /* DialogsListInteractorInput.swift in Sources */,
+				3A66D44625FE3617008325D1 /* DialogsListViewInput.swift in Sources */,
 				58AAA03B86DBD59AA023FD61 /* Observable+Extensions.swift in Sources */,
 				58AAAFB3A51E24B96A84D1E4 /* UIColor+Extensions.swift in Sources */,
 				58AAA4597F969CA488F6095A /* AnimatedSplashScreenViewController.swift in Sources */,
+				3A66D44425FE3617008325D1 /* DialogsListViewController.swift in Sources */,
+				3A66D46125FE3863008325D1 /* View.swift in Sources */,
 				58AAA44A6D89E2F82322BFE5 /* MainStyleButton.swift in Sources */,
 				58AAA8218E4F001EC8B980CA /* StatisticsMainViewModel.swift in Sources */,
 				58AAA78DC2D056949B3C69EE /* StatisticsMainViewController.swift in Sources */,
@@ -817,14 +988,27 @@
 				3A63C7D525E5390B003B9D44 /* AddNewWordViewController.swift in Sources */,
 				58AAA9940B204578D9F38A49 /* RepeatCoordinator.swift in Sources */,
 				58AAA1D0C6F46E72E7091E70 /* RepeatMainViewController.swift in Sources */,
+				3A66D44025FE3617008325D1 /* DialogsListModuleInput.swift in Sources */,
+				3A66D44925FE3617008325D1 /* DialogsListInteractor.swift in Sources */,
 				58AAA009DA1D862DA34A721E /* RepeatMainViewModel.swift in Sources */,
 				58AAAA93C105FCED0906EACA /* WordsListMainViewController.swift in Sources */,
 				58AAA986D7CA6CEBE3E94E87 /* WordsListMainViewModel.swift in Sources */,
 				58AAA2F5D7E7D6556589CCBB /* WordsListCoordinator.swift in Sources */,
 				58AAAC06E4A0C1BD39B8430B /* SettingsCoordinator.swift in Sources */,
+				3A66D45C25FE380C008325D1 /* Router.swift in Sources */,
+				3A66D44525FE3617008325D1 /* DialogsListViewOutput.swift in Sources */,
 				58AAA0AFABB02101F92C9CCF /* SettingsMainViewController.swift in Sources */,
 				58AAA1118877F3E17BC4A617 /* SettingsMainViewModel.swift in Sources */,
+				3A66D44A25FE3617008325D1 /* DialogsListRouterInput.swift in Sources */,
 				58AAAD51A8D14B57703229E5 /* AddNewWordViewModel.swift in Sources */,
+				58AAA88D6DBD335D7977C711 /* TranslationsListSectionModel.swift in Sources */,
+				58AAA2575E6427CB06C3E221 /* TranslationsListItem.swift in Sources */,
+				58AAA8B9816A75CD1447B267 /* TranslationDataModel.swift in Sources */,
+				3A66D44125FE3617008325D1 /* DialogsListPresenter.swift in Sources */,
+				58AAA2B5A4AF69C7CFA98075 /* WordTranslationModel.swift in Sources */,
+				58AAAF8BEA7B5EA5D563F55D /* DialogsListCoordinator.swift in Sources */,
+				58AAAE23F0229C484EBCE2C6 /* DialogsService.swift in Sources */,
+				58AAA1BB14DC666CC1DE1920 /* DialogServiceMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

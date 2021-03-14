@@ -8,7 +8,12 @@
 import UIKit
 
 class NewTranslationTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet private weak var originalTitleLabel: UILabel!
+    @IBOutlet private weak var translateTitleLabel: UILabel!
+    @IBOutlet private weak var originalTextField: UITextField!
+    @IBOutlet private weak var translateTextField: UITextField!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
