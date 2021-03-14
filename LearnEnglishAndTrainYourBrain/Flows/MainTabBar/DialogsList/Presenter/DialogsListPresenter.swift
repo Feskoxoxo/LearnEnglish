@@ -20,7 +20,7 @@ final class DialogsListPresenter {
     var router: Router?
 
     private var currentPage: Int = 0
-    private var searchString: String?
+    private var searchString: String? = ""
     private var allLoadedItems: [DialogListElement] = []
 }
 
@@ -31,8 +31,15 @@ extension DialogsListPresenter: DialogsListViewOutput {
     }
 
     func onSearchUpdate(searchString: String?) {
+        guard self.searchString != searchString else {
+            return
+        }
+
+        self.searchString = searchString
         allLoadedItems = []
         currentPage = 0
+
+        interactor?.loadDialogs(page: currentPage, searchString: searchString)
     }
 
     func loadNextPage() {

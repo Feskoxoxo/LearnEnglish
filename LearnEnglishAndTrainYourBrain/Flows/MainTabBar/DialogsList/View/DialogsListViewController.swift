@@ -45,6 +45,7 @@ final class DialogsListViewController: UIViewController {
     private let data = BehaviorSubject<[DialogListSectionModel]>(value: [])
 
     private var tableView: UITableView!
+    private var searchBar: UISearchBar!
     private var dataSource: RxTableViewSectionedAnimatedDataSource<DialogListSectionModel>?
 
     var output: DialogsListViewOutput?
@@ -52,7 +53,7 @@ final class DialogsListViewController: UIViewController {
     override func loadView() {
         super.loadView()
 
-        configureTableView()
+        configureViews()
     }
 
     override func viewDidLoad() {
@@ -61,7 +62,26 @@ final class DialogsListViewController: UIViewController {
         output?.viewDidLoad()
     }
 
-    private func configureTableView() {
+    private func configureViews() {
+        let searchBar = UISearchBar()
+
+        searchBar.rx
+            .text
+            .debounce(.milliseconds(1500), scheduler: MainScheduler.instance)
+            .subscribe(onNext: { [weak self] text in
+                self?.output?.onSearchUpdate(searchString: text)
+            })
+            .disposed(by: disposeBag)
+        self.searchBar = searchBar
+
+        view.addSubview(searchBar)
+        constrain(searchBar, view) { searchBar, view in
+            searchBar.top == view.topMargin
+            searchBar.leading == view.leading
+            searchBar.trailing == view.trailing
+            searchBar.height == 50
+        }
+
         let tableView = UITableView()
         tableView.register(nibWithCellClass: DialogListTableViewCell.self)
         tableView.tableFooterView = UIView()
@@ -86,8 +106,8 @@ final class DialogsListViewController: UIViewController {
         self.tableView = tableView
 
         view.addSubview(tableView)
-        constrain(tableView, view) { tableView, view in
-            tableView.top == view.top
+        constrain(tableView, view, searchBar) { tableView, view, searchBar in
+            tableView.top == searchBar.bottom
             tableView.bottom == view.bottom
             tableView.leading == view.leading
             tableView.trailing == view.trailing
