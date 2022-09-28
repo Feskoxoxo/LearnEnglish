@@ -23,8 +23,8 @@ class RepeatCoordinator: NavigationCoordinator<RepeatRouter> {
         self.container = container
         super.init(rootViewController: BaseNavigationController(), initialRoute: .main)
 
-        rootViewController.navigationBar.isTranslucent = false
-        rootViewController.setNavigationBarHidden(true, animated: false)
+//        rootViewController.navigationBar.isTranslucent = false
+//        rootViewController.setNavigationBarHidden(true, animated: false)
     }
 
     // MARK: Overrides
